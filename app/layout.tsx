@@ -1,3 +1,4 @@
+import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 
 export default function RootLayout({
@@ -9,9 +10,12 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={"antialiased"}
+      suppressHydrationWarning
     >
       <body>
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
