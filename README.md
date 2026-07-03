@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio pessoal! Este é o meu espaço na web para apresentar quem eu sou, os projetos que desenvolvi, minhas habilidades técnicas e como você pode entrar em contato comigo.
 
-Site : [`exemplo`](exemplo)
+Site : [`https://wallacemartinsz.github.io/`](https://wallacemartinsz.github.io/)
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -27,13 +27,13 @@ Siga os passos abaixo para rodar o projeto na sua máquina de desenvolvimento:
 ### 1️⃣ Clonar o repositório
 
 ```bash
-git clone https://github.com/wallacemartinsz/portfolio.git
+git clone https://github.com/wallacemartinsz/WallaceMartinsz.github.io.git
 ```
 
 ### 2️⃣ Entrar no diretório do projeto
 
 ```bash
-cd portfolio
+cd WallaceMartinsz.github.io
 ```
 
 ### 3️⃣ Instalar as dependências
