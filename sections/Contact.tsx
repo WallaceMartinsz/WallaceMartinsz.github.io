@@ -3,66 +3,70 @@ import {
     FaLinkedin,
     FaWhatsapp
 } from "react-icons/fa";
-
 import { MdEmail } from "react-icons/md";
+
+const links = [
+    {
+        label: "GitHub",
+        href: "https://github.com/wallacemartinsz",
+        icon: FaGithub,
+    },
+    {
+        label: "LinkedIn",
+        href: "https://linkedin.com/in/martinswallace",
+        icon: FaLinkedin,
+    },
+    {
+        label: "E-mail",
+        href: "mailto:martinsswallace@gmail.com",
+        icon: MdEmail,
+    },
+    {
+        label: "WhatsApp",
+        href: "https://wa.me/5581985757473",
+        icon: FaWhatsapp,
+    },
+];
 
 export default function Contact() {
     return (
-        <section
-            id="contact"
-            className="max-w-5xl mx-auto px-6 py-6 text-center"
-        >
-            <span className="text-sm text-zinc-800 uppercase tracking-widest">
-                ... / Contact
-            </span>
+        <section id="contact" className="mx-auto max-w-6xl px-5 py-20 md:py-24">
+            <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-xl shadow-zinc-200/60 dark:border-zinc-800 dark:bg-zinc-900/75 dark:shadow-black/20 md:p-12">
+                <div className="grid gap-8 md:grid-cols-[1fr_0.9fr] md:items-end">
+                    <div>
+                        <span className="text-sm font-semibold uppercase tracking-widest text-teal-700 dark:text-teal-300">
+                            Contato
+                        </span>
 
-            <h2 className="mt-4 text-4xl font-bold">
-                Vamos trabalhar juntos?
-            </h2>
+                        <h2 className="mt-4 text-3xl font-semibold text-zinc-950 dark:text-white md:text-5xl">
+                            Vamos construir algo bem feito?
+                        </h2>
 
-            <p className="mt-4 text-zinc-400 max-w-2xl mx-auto">
-                Estou disponível para oportunidades como Desenvolvedor, projetos freelance e novas conexões
-                profissionais.
-            </p>
+                        <p className="mt-5 max-w-2xl leading-8 text-zinc-600 dark:text-zinc-300">
+                            Estou disponível para oportunidades como desenvolvedor,
+                            projetos freelance e conversas sobre tecnologia, produto e carreira.
+                        </p>
+                    </div>
 
-            <div className="mt-12 flex flex-wrap justify-center gap-4">
-                <a
-                    href="https://github.com/wallacemartinsz"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-700 hover:border-zinc-500 transition"
-                >
-                    <FaGithub size={20} />
-                    GitHub
-                </a>
+                    <div className="grid gap-3 sm:grid-cols-2">
+                        {links.map((link) => {
+                            const Icon = link.icon;
 
-                <a
-                    href="https://linkedin.com/in/martinswallace"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-700 hover:border-zinc-500 transition"
-                >
-                    <FaLinkedin size={20} />
-                    LinkedIn
-                </a>
-
-                <a
-                    href="mailto:martinsswallace@gmail.com"
-                    className="flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-700 hover:border-zinc-500 transition"
-                >
-                    <MdEmail size={20} />
-                    E-mail
-                </a>
-
-                <a
-                    href="https://wa.me/5581985757473"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-2 px-5 py-3 rounded-xl border border-zinc-700 hover:border-zinc-500 transition"
-                >
-                    <FaWhatsapp size={20} />
-                    WhatsApp
-                </a>
+                            return (
+                                <a
+                                    key={link.label}
+                                    href={link.href}
+                                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                                    rel={link.href.startsWith("http") ? "noreferrer" : undefined}
+                                    className="inline-flex items-center justify-between gap-3 rounded-2xl border border-zinc-200 bg-zinc-50 px-5 py-4 font-semibold text-zinc-800 transition hover:-translate-y-0.5 hover:border-zinc-300 hover:bg-white dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 dark:hover:border-zinc-700 dark:hover:bg-zinc-900"
+                                >
+                                    <span>{link.label}</span>
+                                    <Icon size={20} />
+                                </a>
+                            );
+                        })}
+                    </div>
+                </div>
             </div>
         </section>
     );

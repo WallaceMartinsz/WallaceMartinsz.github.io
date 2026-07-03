@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <footer className={"w-full h-16 bg-gray-800 text-white flex items-center justify-center mt-12"}>
-            <span className={"text-sm"}>© 2026 Wallace. Todos os direitos reservados.</span>
+        <footer className="border-t border-zinc-200 py-8 text-center text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-500">
+            <span>© 2026 Wallace Martins. Todos os direitos reservados.</span>
         </footer>
     );
 }
