@@ -4,6 +4,7 @@ import { GrOracle } from "react-icons/gr";
 import {
     SiDocker,
     SiJquery,
+    SiJunit5,
     SiNextdotjs,
     SiPostgresql,
     SiPython,
@@ -11,6 +12,7 @@ import {
     SiSpring,
     SiTailwindcss,
     SiTypescript,
+    SiSwagger
 } from "react-icons/si";
 
 const iconMap: Record<string, IconType> = {
@@ -27,6 +29,10 @@ const iconMap: Record<string, IconType> = {
     "Spring": SiSpring,
     "Tailwind CSS": SiTailwindcss,
     "TypeScript": SiTypescript,
+    "Spring Boot": SiSpring,
+    "Swagger": SiSwagger,
+    "JUnit": SiJunit5,
+    "Mockito": FaJava,
 };
 
 interface TechBadgeProps {

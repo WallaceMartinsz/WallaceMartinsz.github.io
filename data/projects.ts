@@ -11,7 +11,7 @@ export const projects: Project[] = [
         id: 1,
         title: "Sistema de Ordens de Serviço",
         description: "Sistema para gerenciamento de clientes, equipamentos, orçamentos e ordens de serviço, com controle de status, histórico de atendimentos e geração de relatórios.",
-        technologies: ["Next.js", "Java", "Spring Boot", "PostgreSQL", "Docker", "JWT", "Swagger", "JUnit" ,"Mockito"],
+        technologies: ["Next.js", "Java", "Spring Boot", "PostgreSQL", "Docker", "Swagger", "JUnit" ,"Mockito"],
         status: "Em construção",
     },
     {
